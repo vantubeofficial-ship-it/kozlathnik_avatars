@@ -1,0 +1,51 @@
+html {
+    font-family: Arial,sans-serif;
+    color: #fff;
+}
+
+body {
+    color: #fff;
+    background-color: #0e1621;
+    text-align: center;
+    margin: 0%;
+}
+
+body > header {
+    display: flex;
+    justify-content: space-between;  
+    background-color: rgb(49, 49, 49);
+}
+
+body > header {
+   padding: 1em ;
+}
+
+.site-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.site-logo {
+  width :25px;
+  height :25px;
+  border-radius: 15px;
+  margin-inline: 10px;
+}
+
+.img-section  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 5px;
+  justify-content: center;
+}
+
+.img-section > img  {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    margin: 1em;
+}
