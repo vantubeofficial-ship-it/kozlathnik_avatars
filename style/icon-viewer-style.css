@@ -1,0 +1,29 @@
+.image-section {
+    display: flex;
+    justify-content: center;
+}
+
+#view-section {
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    border-color: rgb(27, 118, 255);
+    align-content: center;
+    border-style: solid;
+    border-radius: 100%;
+    padding: 2em;
+    width: 114px;
+    height: 114px;
+}
+
+#view-section > #image-view {
+    width: 114px;
+    height: 114px;}
+
+button, input {
+        background: #155aae;color:#fff;border:none;padding:8px 15px;cursor:pointer;font-size:14px
+}
+
+.set-URL-icon {
+    display: block;
+}
