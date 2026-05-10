@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предпросмотр аватара</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/icon-viewer-style.css">
+</head>
+<body>
+  <header>
+    <span class="site-logo-container"><a href="index.html"><img class="site-logo" src="style/files/Site logo.png" alt="Лого сайта" id="site-logo">KozlathnikAvatars</a></span>
+    <span class="nav-item"><a href="icon-maker.html">Редактор иконок</a></span>
+    <span class="nav-item"><a href="icon-viewer.html">Предпросмотр иконок</a></span>
+    </header>
+  <h1>Предпросмотр аватара</h1>
+    <div class="image-section">
+        <div id="view-section">
+           <img id="image-view" src="style/files/Goat Icon Vector (default).svg" alt="">
+        </div>
+    </div>
+    <div class="set-URL-icon">
+        <p>Введите ссылку на аватар</p>
+        <input type="url" id="input-URL-icon">
+        <button id="button-set-URL-icon">Задать ссылку на изображение</button>
+    </div>
+  <script> 
+  const input_URL_icon = document.getElementById("input-URL-icon").value;
+  const image_view = document.getElementById("image-view");
+  const button_set_URL_icon = document.getElementById("button-set-URL-icon");
+  button_set_URL_icon.addEventListener("click", function () {
+    image_view.src = input_URL_icon.value;
+  })
+  </script>
+</body>
+</html>
