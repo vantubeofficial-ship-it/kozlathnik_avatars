@@ -19,6 +19,7 @@
     <div id="view-section">
       <svg id="mySvg" width="120" height="120">
         <g>
+          <defs id="defs_of_avatar"></defs>
           <rect id="fillAvatar" width="100%" height="100%" fill="black" />
           <path id="avatar-icon"
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.67752"
@@ -29,25 +30,64 @@
     </div>
     <div class="set-data-items">
       <div class="set-data-item">
-        <p> Выберите цвет иконки аватара  <input type="color" id="input-color-avatar"></p>
+        <p> Выберите цвет иконки аватара  <input type="color" id="input-color-avatar"> или градиентный цвет 
+          <input type="color" id="input-gradient-avatar1"> <input type="color" id="input-gradient-avatar2"></p>
         <button id="set-color-avatar">Задать цвет аватара</button>
+        <button id="set-gradient-avatar">Задать градиентный цвет аватара</button>
       </div>
       <div class="set-data-item">
-        <p> Выберите цвет фона для аватара  <input type="color" id="input-background-avatar"></p>
+        <p> Выберите цвет фона для аватара  <input type="color" id="input-background-avatar">
+          или градиентный цвет 
+          <input type="color" id="input-gradient-background-avatar1"> <input type="color" id="input-gradient-background-avatar2"></p>
         <button id="set-background-avatar">Задать цвет фона</button>
+        <button id="set-gradient-background-avatar">Задать градиентный цвет фона</button>
       </div>
       <div class="get-data-item"><button id="download-button">Скачать</button></div></div>
 
   </div>
   <script> 
+  
+  
+  /*Для ввода и сохранения градиентного цвета фона*/
+  const input_gradient_background_avatar1 = document.getElementById("input-gradient-background-avatar1").value;
+  const input_gradient_background_avatar2 = document.getElementById("input-gradient-background-avatar2").value;
+  const set_gradient_background_avatar = document.getElementById("set-gradient-background-avatar");
+  /*Для ввода и сохранения градиентного цвета аватара*/
+  const input_gradient_avatar1 = document.getElementById("input-gradient-avatar1").value;
+  const input_gradient_avatar2 = document.getElementById("input-gradient-avatar2").value;
+  const set_gradient_avatar = document.getElementById("set-gradient-avatar");
+  /*Для ввода и сохранения цвета фона*/
   const input_background_avatar= document.getElementById("input-background-avatar").value;
   const set_background_avatar = document.getElementById("set-background-avatar");
+  /*Для ввода и сохранения цвета аватара*/
   const input_color_avatar= document.getElementById("input-color-avatar").value;
   const set_color_avatar = document.getElementById("set-color-avatar");
+  /*Элементы SVG модели аватара и кнопка для скачивания содержимого*/
   const svg = document.getElementById("mySvg");
   const download_button = document.getElementById("download-button");
   const imageAvatar = document.getElementById("imageAvatar");
   const fillAvatar = document.getElementById("fillAvatar");
+  set_gradient_background_avatar.addEventListener ("click", function () {
+    /*defs_of_avatar - основные настройки SVG обьекта (в данном случае linearGradient для настрйоки градиента)*/
+    document.getElementById("defs_of_avatar").innerHTML += 
+           `<defs>
+            <linearGradient id="Back_Gradient_of_Avatar" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color=${input_gradient_background_avatar1} id="stop1" />
+            <stop offset="100%" stop-color=${input_gradient_background_avatar2} id="stop2" />
+            </linearGradient>
+            </defs>`       
+    fillAvatar.setAttribute("fill", "url(#Back_Gradient_of_Avatar)");
+  });
+  set_gradient_avatar.addEventListener ("click", function () {
+    document.getElementById("defs_of_avatar").innerHTML += `
+            <defs>
+            <linearGradient id="Gradient_of_Avatar" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color=${input_gradient_avatar1} id="stop1" />
+            <stop offset="100%" stop-color=${input_gradient_avatar2} id="stop2" />
+            </linearGradient>
+            </defs>`
+    document.getElementById("avatar-icon").style.fill = "url(#Gradient_of_Avatar)";
+  });
   set_background_avatar.addEventListener ("click", function () {
     fillAvatar.setAttribute("fill", input_background_avatar);
   });
