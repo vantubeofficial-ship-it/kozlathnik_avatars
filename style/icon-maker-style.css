@@ -33,3 +33,11 @@ button {
   margin: 5px;
   padding: 2.5px;
 }
+
+.stop-gradient {
+  width: 0.5em;
+  height: 0.5em;
+  display: block;
+  padding: 0.5em;
+  margin: 0.5em;
+}

@@ -58,3 +58,12 @@ body > header {
     align-items: center;
     margin: 1em;
 }
+
+footer {
+  background-color: rgb(49, 49, 49);
+  margin-top: 10em;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
