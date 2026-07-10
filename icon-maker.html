@@ -16,34 +16,92 @@
   </header>
   <section>
     <h1>Редактор иконок</h1>
-    <div class="work-section">
-      <div id="view-section">
-        <svg id="mySvg" width="120" height="120">
-          <g>
-            <defs id="defs_of_avatar"></defs>
-            <rect id="fillAvatar" width="100%" height="100%" fill="black" />
-            <path id="avatar-icon"
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.67752"
-       d="m 66.851241,2.474174 7.133006,7.5209981 4.461405,8.3309509 1.335805,9.403877 c 0,2.556087 0.148423,3.539602 -1.335805,5.911609 -1.492948,2.377266 -5.23844,6.206138 -7.578277,8.330951 -2.470792,2.051181 -4.243138,3.366041 -6.495663,4.433707 -2.252535,1.062407 -4.016143,1.714578 -7.019508,1.961772 -3.003374,0.247194 -5.709909,0.315565 -11.000734,-0.483871 -5.290825,-0.799433 -12.231757,-1.95651 -17.574967,-5.170027 -5.762285,-2.314153 -7.59574,-5.15425 -11.393609,-7.726116 L 15.601823,31.763989 C 14.903364,29.917926 12.816719,26.068017 13.183409,23.932685 L 14.266021,17.521429 20.07196,7.4443442 C 19.757653,5.7455453 17.836892,4.9303322 15.6804,5.0881151 13.523908,5.2406389 8.7569277,7.0867021 7.1330099,8.3857835 L 2.6803358,15.102087 C 1.1961101,17.342608 0,26.69915 0,30.685805 c 0,3.986654 1.4143784,6.001019 2.6803358,8.33095 l 4.8979417,5.643378 7.5782785,5.911608 -4.452675,15.047254 -2.2350683,12.359683 v 5.375146 L 5.10748,95.177045 c -1.2397643,5.822195 -1.3881871,11.644395 -1.53661,17.466595 1.5104178,3.33974 4.6360212,3.83939 8.398967,4.92284 3.762948,1.08344 10.293537,1.38323 14.187446,1.58308 5.159863,-0.17881 10.983265,0.0421 15.488327,-0.5312 4.51379,-0.56802 5.779743,-3.0084 6.932198,-5.43826 v -9.13564 c -0.593686,-3.49227 -0.09604,-7.116023 -1.781067,-10.476806 l 1.318338,-10.482064 4.478872,-9.135642 3.562134,1.882877 3.570871,5.369888 10.249887,6.453333 8.914081,5.375146 11.149147,4.281183 c 1.973152,1.267527 3.955023,3.855165 5.936911,5.127955 l 2.07791,0.26297 -3.125605,3.65531 -0.445262,10.58725 c 0.611151,1.99859 0.637341,3.36604 5.421774,2.99262 4.775711,-0.37868 6.940941,-8.25206 11.070581,-12.31235 2.00807,-2.18267 0.227,-1.97755 0.92546,-2.55609 0.69846,-0.57853 2.31364,0.9993 3.27402,-0.9204 L 119.419,93.699139 c -0.18335,-2.69809 0.73338,-4.612525 0.55876,-7.31062 l -3.2129,-7.063425 c -0.87308,-1.535756 -0.37543,-1.172852 -1.15246,-2.145853 -0.77704,-0.967737 -1.30088,-1.935474 -3.4923,-3.681608 l -10.50308,-6.80045 c -3.623251,-2.38253 -3.108139,-7.526258 -10.660218,-11.881077 -2.706524,-1.972289 -7.159203,-1.577829 -10.730074,-2.361483 1.030228,-1.1413 2.916063,-1.709319 3.96375,-3.166185 l 3.911374,-6.111466 c 1.300878,-2.040663 2.453339,-2.230003 3.073217,-5.596044 0.742115,-3.581677 1.231038,-10.140197 0.63734,-14.605461 C 91.21873,18.515463 89.830539,12.950976 87.595467,10.799866 85.3604,8.6540149 84.050792,6.1452628 81.117262,4.3517941 78.175002,2.558325 72.080953,0.52292257 69.976843,0.05483245 67.593351,-0.26073386 66.187704,0.81745101 66.851241,2.474174 Z"
-       id="path7" />
-          </g>
-        </svg>
+    <div class="work-window">
+      <div class="work-section">
+        <div id="view-section">
+          <svg id="mySvg" width="120" height="120">
+            <g>
+              <defs id="defs_of_avatar"></defs>
+              <rect id="fillAvatar" width="100%" height="100%" fill="black" />
+              <path id="avatar-icon"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.67752"
+         d="m 66.851241,2.474174 7.133006,7.5209981 4.461405,8.3309509 1.335805,9.403877 c 0,2.556087 0.148423,3.539602 -1.335805,5.911609 -1.492948,2.377266 -5.23844,6.206138 -7.578277,8.330951 -2.470792,2.051181 -4.243138,3.366041 -6.495663,4.433707 -2.252535,1.062407 -4.016143,1.714578 -7.019508,1.961772 -3.003374,0.247194 -5.709909,0.315565 -11.000734,-0.483871 -5.290825,-0.799433 -12.231757,-1.95651 -17.574967,-5.170027 -5.762285,-2.314153 -7.59574,-5.15425 -11.393609,-7.726116 L 15.601823,31.763989 C 14.903364,29.917926 12.816719,26.068017 13.183409,23.932685 L 14.266021,17.521429 20.07196,7.4443442 C 19.757653,5.7455453 17.836892,4.9303322 15.6804,5.0881151 13.523908,5.2406389 8.7569277,7.0867021 7.1330099,8.3857835 L 2.6803358,15.102087 C 1.1961101,17.342608 0,26.69915 0,30.685805 c 0,3.986654 1.4143784,6.001019 2.6803358,8.33095 l 4.8979417,5.643378 7.5782785,5.911608 -4.452675,15.047254 -2.2350683,12.359683 v 5.375146 L 5.10748,95.177045 c -1.2397643,5.822195 -1.3881871,11.644395 -1.53661,17.466595 1.5104178,3.33974 4.6360212,3.83939 8.398967,4.92284 3.762948,1.08344 10.293537,1.38323 14.187446,1.58308 5.159863,-0.17881 10.983265,0.0421 15.488327,-0.5312 4.51379,-0.56802 5.779743,-3.0084 6.932198,-5.43826 v -9.13564 c -0.593686,-3.49227 -0.09604,-7.116023 -1.781067,-10.476806 l 1.318338,-10.482064 4.478872,-9.135642 3.562134,1.882877 3.570871,5.369888 10.249887,6.453333 8.914081,5.375146 11.149147,4.281183 c 1.973152,1.267527 3.955023,3.855165 5.936911,5.127955 l 2.07791,0.26297 -3.125605,3.65531 -0.445262,10.58725 c 0.611151,1.99859 0.637341,3.36604 5.421774,2.99262 4.775711,-0.37868 6.940941,-8.25206 11.070581,-12.31235 2.00807,-2.18267 0.227,-1.97755 0.92546,-2.55609 0.69846,-0.57853 2.31364,0.9993 3.27402,-0.9204 L 119.419,93.699139 c -0.18335,-2.69809 0.73338,-4.612525 0.55876,-7.31062 l -3.2129,-7.063425 c -0.87308,-1.535756 -0.37543,-1.172852 -1.15246,-2.145853 -0.77704,-0.967737 -1.30088,-1.935474 -3.4923,-3.681608 l -10.50308,-6.80045 c -3.623251,-2.38253 -3.108139,-7.526258 -10.660218,-11.881077 -2.706524,-1.972289 -7.159203,-1.577829 -10.730074,-2.361483 1.030228,-1.1413 2.916063,-1.709319 3.96375,-3.166185 l 3.911374,-6.111466 c 1.300878,-2.040663 2.453339,-2.230003 3.073217,-5.596044 0.742115,-3.581677 1.231038,-10.140197 0.63734,-14.605461 C 91.21873,18.515463 89.830539,12.950976 87.595467,10.799866 85.3604,8.6540149 84.050792,6.1452628 81.117262,4.3517941 78.175002,2.558325 72.080953,0.52292257 69.976843,0.05483245 67.593351,-0.26073386 66.187704,0.81745101 66.851241,2.474174 Z"
+         id="path7" />
+            </g>
+          </svg>
+        </div>
+        <div id="gradient-avatar-segtings" class="gradient-segtings-window" style="display: none;">
+          <div class="gradient-segtings">
+            <h2>Настройки градиентного цвета (аватар)</h1>
+            <div class="head-gradient-segtings">
+              <div class="types-gradient">
+                <h3>Выберите тип градиента</h3>
+                <div class="type-gradient-items">
+                  <div class="type-gradient"><p>линейный</p><input class="" id="a-linear-gradient" type="radio"></div>
+                  <div class="type-gradient"><p>радиальный</p><input class="" id="a-radial-gradient" type="radio"></div>
+                </div>
+              </div>
+                <div class="style-gradient" id="a-linear-grad">
+                  <h3>Настройте стиль (параметры) градиента</h3>
+                  <div class="style-grad-item"><p>начальная точка x1</p><input type="text" id="a-x1"></div>
+                  <div class="style-grad-item"><p>начальная точка y1</p><input type="text" id="a-y1"></div>
+                  <div class="style-grad-item"><p>конечная точка x2</p><input type="text" id="a-x2"></div>
+                  <div class="style-grad-item"><p>конечная точка y2</p><input type="text" id="a-y2"></div>
+                </div>
+                <div class="style-gradient" id="a-radial-grad">
+                  <div class="style-grad-item"><p>начальная точка cx1</p><input type="text" id="a-cx"></div>
+                  <div class="style-grad-item"><p>начальная точка cy2</p><input type="text" id="a-cy"></div>
+                  <div class="style-grad-item"><p>радиус градиента r</p><input type="text" id="a-r"></div>
+                </div>
+              </div>
+              <button id="set-gradient-segtings">Задать настройки</button>
+          </div>
+        </div>
+        <div id="gradient-background-avatar-segtings" class="gradient-segtings-window" style="display: none;">
+          <div class="gradient-segtings">
+          <h2>Настройки градиентного цвета (фон)</h1>
+            <div class="head-gradient-segtings">
+              <div class="types-gradient">
+                <h3>Выберите тип градиента</h3>
+                <div class="type-gradient-items">
+                  <div class="type-gradient"><p>линейный</p><input class="" id="b-linear-gradient" type="radio"></div>
+                  <div class="type-gradient"><p>радиальный</p><input class="" id="b-radial-gradient" type="radio"></div>
+                </div>
+              </div>
+                <div class="style-gradient" id="b-linear-grad">
+                  <h3>Настройте стиль (параметры) градиента</h3>
+                  <div class="style-grad-item"><p>начальная точка x1</p><input type="text" id="b-x1"></div>
+                  <div class="style-grad-item"><p>начальная точка y1</p><input type="text" id="b-y1"></div>
+                  <div class="style-grad-item"><p>конечная точка x2</p><input type="text" id="b-x2"></div>
+                  <div class="style-grad-item"><p>конечная точка y2</p><input type="text" id="b-y2"></div>
+                </div>
+                <div class="style-gradient" id="b-radial-grad">
+                  <div class="style-grad-item"><p>начальная точка cx1</p><input type="text" id="b-cx"></div>
+                  <div class="style-grad-item"><p>начальная точка cy2</p><input type="text" id="b-cy"></div>
+                  <div class="style-grad-item"><p>радиус градиента r</p><input type="text" id="b-r"></div>
+                </div>
+              </div>
+              <button id="set-gradient-background-segtings">Задать настройки</button>
+        </div>
       </div>
-      <div class="set-data-items">
-        <div class="set-data-item">
-          <p> Выберите цвет иконки аватара  <input type="color" id="input-color-avatar"> или градиентный цвет
-            <input type="color" id="input-gradient-avatar"></p>
-          <button id="set-color-avatar">Задать цвет аватара</button>
-          <button id="set-gradient-avatar">Задать градиентный цвет аватара </button>
-        </div>
-        <div class="set-data-item">
-          <p> Выберите цвет фона для аватара  <input type="color" id="input-background-avatar">
-            или градиентный цвет
-            <input type="color" id="input-gradient-background-avatar"></p>
-          <button id="set-background-avatar">Задать цвет фона</button>
-          <button id="set-gradient-background-avatar">Задать градиентный цвет фона </div></button>
-        </div>
-        <div class="get-data-item"><button id="download-button">Скачать</button></div></div>
+        <div class="set-data-items">
+          <div class="set-data-item">
+            <p> Выберите цвет иконки аватара  <input type="color" id="input-color-avatar"> или градиентный цвет
+              <input type="color" id="input-gradient-avatar"></p>
+            <button id="set-color-avatar">Задать цвет аватара</button>
+            <button id="set-gradient-avatar">Задать градиентный цвет аватара </button>
+            <button id="gradient-segtings-button">Настройки градиента</button>
+          </div>  
+          <div class="set-data-item">
+            <p> Выберите цвет фона для аватара  <input type="color" id="input-background-avatar">
+              или градиентный цвет
+              <input type="color" id="input-gradient-background-avatar"></p>
+            <button id="set-background-avatar">Задать цвет фона</button>
+            <button id="set-gradient-background-avatar">Задать градиентный цвет фона </div></button>
+            <button id="gradient-background-segtings-button">Настройки градиента</button>
+          </div>
+          <div class="get-data-item"><button id="download-button">Скачать</button></div></div>
+       </div>
     </div>
   </section>
   <footer><div class="uridic-info">Vanko Corporation & VanTube Inc 2026</div></footer>
@@ -62,13 +120,112 @@
   /*Для ввода и сохранения цвета аватара*/
   const input_color_avatar= document.getElementById("input-color-avatar").value;
   const set_color_avatar = document.getElementById("set-color-avatar");
-  /*Элементы SVG модели аватара и кнопка для скачивания содержимого*/
+  /*Для настроек градиента*/
+  const gradient_segtings_button = document.getElementById("gradient-segtings-button")
+  const gradient_background_segtings_button = document.getElementById("gradient-background-segtings-button")
+  /*Элементы SVG модели аватара и кнопка для скачивания содержимого + другие скприпты*/
   const svg = document.getElementById("mySvg");
   const download_button = document.getElementById("download-button");
   const imageAvatar = document.getElementById("imageAvatar");
   const fillAvatar = document.getElementById("fillAvatar");
   const gradientAvatarArray = [];
   const gradientBackgroundArray = [];
+  const gradientAvatarSegtings = {type:"", style:{
+
+  }};
+  const gradientBackgroundSegtings = {type:"", style:{
+
+  }};
+  /*Окно для настройки градиента (начало)*/
+  gradient_segtings_button.addEventListener("click", function () {
+    document.getElementById("gradient-avatar-segtings").style.display = 'flex'
+    document.getElementById("gradient-background-avatar-segtings").style.display = 'none'
+  })
+  
+  gradient_background_segtings_button.addEventListener("click", function () {
+    document.getElementById("gradient-avatar-segtings").style.display = 'none'
+    document.getElementById("gradient-background-avatar-segtings").style.display = 'flex'
+  })
+   
+  const gradient_avatar_segtings = document.getElementById("gradient-avatar-segtings")
+  const gradient_background_avatar_segtings = document.getElementById("gradient-background-avatar-segtings")
+  const a_linear_gradient_input = document.getElementById("a-linear-gradient")
+  const a_radial_gradient_input = document.getElementById("a-radial-gradient")
+  const b_linear_gradient_input = document.getElementById("b-linear-gradient")
+  const b_radial_gradient_input = document.getElementById("b-radial-gradient")
+  const set_gradient_segtings = document.getElementById("set-gradient-segtings")
+  const set_gradient_background_segtings = document.getElementById("set-gradient-background-segtings")
+  a_linear_gradient_input.addEventListener("click", function () {
+    a_linear_gradient_input.checked = true
+    a_radial_gradient_input.checked = false 
+    document.getElementById("a-linear-grad").style.display = 'flex'
+    document.getElementById("a-radial-grad").style.display = 'none'
+  })
+  b_linear_gradient_input.addEventListener("click", function () {
+    b_linear_gradient_input.checked = true
+    b_radial_gradient_input.checked = false 
+    document.getElementById("b-linear-grad").style.display = 'flex'
+    document.getElementById("b-radial-grad").style.display = 'none'
+  })
+  a_radial_gradient_input.addEventListener("click", function () {
+    a_linear_gradient_input.checked = false
+    a_radial_gradient_input.checked = true
+    document.getElementById("a-linear-grad").style.display = 'none'
+    document.getElementById("a-radial-grad").style.display = 'flex'
+  })
+  b_radial_gradient_input.addEventListener("click", function () {
+    b_linear_gradient_input.checked = false
+    b_radial_gradient_input.checked = true 
+    document.getElementById("b-linear-grad").style.display = 'none'
+    document.getElementById("b-radial-grad").style.display = 'flex'
+  })
+  set_gradient_segtings.addEventListener("click", function () {
+    if (a_linear_gradient_input.checked === true) {
+      const x1 = document.getElementById("a-x1").value
+      const y1 = document.getElementById("a-y1").value
+      const x2 = document.getElementById("a-x2").value
+      const y2 = document.getElementById("a-y2").value
+      gradientAvatarSegtings.type = "linear-Gradient"
+      gradientAvatarSegtings.style = {
+        x1, y1, x2, y2
+      }
+    }
+    if (a_radial_gradient_input.checked === true) {
+      const cx = document.getElementById("a-cx").value
+      const cy = document.getElementById("a-cy").value
+      const r = document.getElementById("a-r").value
+      gradientAvatarSegtings.type = "radial-Gradient"
+      gradientAvatarSegtings.style = {
+        cx, cy, r
+      }
+    }
+    gradient_avatar_segtings.style.display = 'none'
+    alert(JSON.stringify(gradientAvatarSegtings))
+  })
+  set_gradient_background_segtings.addEventListener("click", function () {
+    if (b_linear_gradient_input.checked === true) {
+      const x1 = document.getElementById("b-x1").value
+      const y1 = document.getElementById("b-y1").value
+      const x2 = document.getElementById("b-x2").value
+      const y2 = document.getElementById("b-y2").value
+      gradientBackgroundSegtings.type = "linear-Gradient"
+      gradientBackgroundSegtings.style = {
+        x1, y1, x2, y2
+      }
+    }
+    if (b_radial_gradient_input.checked === true) {
+      const cx = document.getElementById("b-cx").value
+      const cy = document.getElementById("b-cy").value
+      const r = document.getElementById("b-r").value
+      gradientBackgroundSegtings.type = "radial-Gradient"
+      gradientBackgroundSegtings.style = {
+        cx, cy, r
+      }
+    }
+    gradient_background_avatar_segtings.style.display = 'none'
+    alert(JSON.stringify(gradientBackgroundSegtings))
+  })
+  /*Окно для настройки градиента (конец)*/
   input_gradient_avatar.addEventListener("change", function () {
     const event_value = input_gradient_avatar.value
     const stop_color = document.createElement("div")
@@ -88,28 +245,45 @@
   
   /*defs_of_avatar - основные настройки SVG обьекта (в данном случае linearGradient для настрйоки градиента)*/
   set_gradient_avatar.addEventListener ("click", function () {
-    document.getElementById("defs_of_avatar").innerHTML += `
-            <defs>
-            <linearGradient id="Gradient_of_Avatar" x1="0%" y1="0%" x2="100%" y2="100%">
-            </linearGradient>
-            </defs>`
+    switch(gradientAvatarSegtings.type) {
+      case 'linear-Gradient': 
+      document.getElementById("defs_of_avatar").innerHTML += `
+              <defs>
+              <linearGradient id="Gradient_of_Avatar" x1="${gradientAvatarSegtings.style.x1}%" y1="${gradientAvatarSegtings.style.y1}%" x2="${gradientAvatarSegtings.style.x2}%" y2="${gradientAvatarSegtings.style.y2}%">
+              </linearGradient>
+              </defs>`
+      case 'radial-Gradient':
+      document.getElementById("defs_of_avatar").innerHTML += `
+              <defs>
+              <radialGradient id="Gradient_of_Avatar" cx="${gradientAvatarSegtings.style.cx}%" cy="${gradientAvatarSegtings.style.cy}%" r="${gradientAvatarSegtings.style.r}%" y2="${gradientAvatarSegtings.style.y2}%">
+              </radialGradient>
+              </defs>` 
+    }
     const Gradient_of_Avatar = document.getElementById("Gradient_of_Avatar")         
     let id = 1
     gradientAvatarArray.forEach((stop_color) => {
-      Gradient_of_Avatar.innerHTML +=  `<stop offset="${id*10}%" stop-color=${stop_color.code} id="stop${id}" />`
+      Gradient_of_Avatar.innerHTML +=  `<stop offset="${(id*100)-100}%" stop-color=${stop_color.code} id="stop${id}" />`
       id += 1
     })
     document.getElementById("avatar-icon").style.fill = "url(#Gradient_of_Avatar)";
   });
-  set_gradient_background_avatar.addEventListener ("click", function () {
-    document.getElementById("defs_of_avatar").innerHTML += 
-           `<defs>
-            <linearGradient id="Back_Gradient_of_Avatar" x1="0%" y1="0%" x2="100%" y2="100%">
-            </defs>`
+  set_gradient_background_avatar.addEventListener("click", function () {
+    switch(gradientBackgroundSegtings.type) {
+      case 'linear-Gradient': 
+      document.getElementById("defs_of_avatar").innerHTML += 
+             `<defs>
+              <linearGradient id="Back_Gradient_of_Avatar" x1="${gradientBackgroundSegtings.style.x1}%" y1="${gradientBackgroundSegtings.style.y1}%" x2="${gradientBackgroundSegtings.style.x2}%" y2="${gradientBackgroundSegtings.style.y2}%"></linearGradient>
+              </defs>`
+      case 'radial-Gradient': 
+      document.getElementById("defs_of_avatar").innerHTML += 
+             `<defs>
+              <radialGradient id="Back_Gradient_of_Avatar" cx="${gradientBackgroundSegtings.style.cx}%" cy="${gradientBackgroundSegtings.style.cy}%" r="${gradientBackgroundSegtings.style.r}%"><radialGradient/>
+              </defs>`
+    }
       const Gradient_of_Avatar = document.getElementById("Back_Gradient_of_Avatar")         
       let id = 1
       gradientBackgroundArray.forEach((stop_color) => {
-      Gradient_of_Avatar.innerHTML +=  `<stop offset="${id*10}%" stop-color=${stop_color.code} id="stop${id}" />`
+      Gradient_of_Avatar.innerHTML +=  `<stop offset="${(id*100)-100}%" stop-color=${stop_color.code} id="stop${id}" />`
       id += 1
     })               
     fillAvatar.setAttribute("fill", "url(#Back_Gradient_of_Avatar)");
