@@ -1,8 +1,19 @@
+.work-window {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .work-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-block: 2em;
+  background-color: rgb(49, 49, 49);
+  border-radius: 1em;
+  width: 80%
 }
 
 .work-section > #view-section{
@@ -17,7 +28,11 @@
 }
 
 button {
-  background: #155aae;color:#fff;border:none;padding:8px 15px;cursor:pointer;font-size:14px
+  background: #155aae;color:#fff;border:none;padding:8px 15px;cursor:pointer;font-size:14px; margin: 0.5em;
+}
+
+input {
+  background: #155aae;color:#fff;border:#064796; border-style: solid;padding:8px 15px;cursor:pointer;font-size:14px
 }
 
 #view-section > img {
@@ -40,4 +55,56 @@ button {
   display: block;
   padding: 0.5em;
   margin: 0.5em;
+}
+
+.gradient-segtings-window {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  background-color: #2276dd;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  top: 5em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.gradient-segtings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.gradient-segtings > .head-gradient-segtings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.types-gradient {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.types-gradient > .type-gradient-items, .type-gradient-items > .type-gradient {
+  display: flex;
+  flex-direction: row;
+}
+
+.style-gradient {
+  display: none;
+  flex-direction: column;
+}
+
+@media (max-width: 600px){
+  .gradient-segtings > .head-gradient-segtings {
+    flex-direction: column;
+  }
 }
